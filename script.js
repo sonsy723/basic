@@ -1,38 +1,23 @@
-// 1. 버튼 태그를 가져온다
-// 2. 버튼 태그에 이벤트를 등록한다
+document.querySelector('.btn').addEventListener('click', function(){
+    document.querySelector('.title').innerHTML = "제목아니다"
+})
 
-// 이벤트가 발생하면
-
-function 토글열닫() {
-  document.querySelector(".modal").classList.toggle("show");
+const sum = function(num1, num2) {
+    console.log(num1 + num2);
 }
+console.log(sum(1, 3));
 
-document.querySelector(".modal-btn").addEventListener("click", 토글열닫);
-
-document.querySelector(".close-btn").addEventListener("click", 토글열닫);
-
-function 경고메세지열닫(displayValue){
-    document.querySelector('.경고메세지').style.display = displayValue;
-}
-document.querySelector('.login').addEventListener('click', function(){
-    if(document.querySelector('.아이디').value === "" || document.querySelector('.비밀번호').value === ""){
-        경고메세지열닫('block');
+const isEvenOrOdd = function(num) {
+    if(num % 2 === 0){
+        console.log('짝수입니다.')
+    } else {
+        console.log('홀수입니다.')
     }
-});
+}
+console.log(isEvenOrOdd(3));
 
-document.querySelector('.경고창닫기').addEventListener('click', function(){
-    경고메세지열닫('none'); 
-});
-
-let count = 0;
-const btn = document.querySelector('.btn');
-const resetBtn = document.querySelector('.reset-btn')
-btn.addEventListener('click', function(){
-    count = count + 1;
-    btn.textContent = count;
-    
-})
-resetBtn.addEventListener('click', function(){
-    count = 0;
-    btn.textContent = count;
-})
+const person = {
+    '이름' : '병수',
+    '나이' : 20
+}
+console.log(person);
