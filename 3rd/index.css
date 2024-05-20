@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* .side-bar {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 300px;
+  height: 100%;
+  background-color: #e2e3ff;
+  border-right: 2px solid #ccceff;
+  transition: left 0.3s;
+}
+
+.side-bar-btn {
+  width: 40px;
+  height: 25px;
+  line-height: 50%;
+  float: right;
+  background-color: transparent;
+  border: 1px solid rgb(21, 21, 90);
+  cursor: pointer;
+}
+
+.active {
+  left: 0;
+} */
+
+.collapsible {
+    background-color: #828282;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active,
+  .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    transition: max-height 0.5s;
+  }

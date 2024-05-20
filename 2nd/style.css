@@ -1,0 +1,14 @@
+body{
+    height: 2000px;
+}
+
+.up{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.tab-content{
+    display: none;
+}
