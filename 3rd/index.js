@@ -40,12 +40,15 @@ let products = [
     },
 ];
 
-const productContainer = document.querySelector("product-container");
+const productContainer = document.querySelector(".product-container");
 products.forEach ((product) => {
     let html템플릿 = `<div class="products">
         <h3 class="brand">${product.brand}</h3>
         <h3 class="name">${product.name}</h3>
         </div>`;
-    productContainer.insertAdjacentHTML('brefoerend', html템플릿);
-})
+    productContainer.insertAdjacentHTML('beforeend', html템플릿);
+});
+
+// ************ 베이직 과제 ************ //
+
 
